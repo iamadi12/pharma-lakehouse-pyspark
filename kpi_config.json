@@ -1,0 +1,27 @@
+{
+  "kpis": [
+    {
+      "name": "trx_by_zip3_month",
+      "source": "rx",
+      "measure": "trx",
+      "agg": "sum",
+      "grain": ["brand", "zip3", "month"]
+    },
+    {
+      "name": "nrx_by_specialty_month",
+      "source": "rx",
+      "measure": "nrx",
+      "agg": "sum",
+      "grain": ["brand", "specialty", "month"],
+      "hcp_columns": ["specialty"]
+    },
+    {
+      "name": "calls_by_zip3_month",
+      "source": "calls",
+      "measure": "calls",
+      "agg": "sum",
+      "grain": ["zip3", "month"],
+      "hcp_columns": ["zip3"]
+    }
+  ]
+}
